@@ -1,0 +1,119 @@
+\documentclass[journal,two column]{IEEEtran}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{amsmath}
+{\large \title{Assignment 1(ICSE Class 10 2017)}}
+\author{\LARGE {NIMMALA AVINASH(CS21BTECH11039)}}
+
+\begin{document}
+\maketitle
+{\LARGE \textbf{Question 11.}}\\
+
+{\Large { \textbf{Solve the following system of linear equations using matrix method:}}}\\
+
+\begin{LARGE}
+$\frac{1}{x}+\frac{1}{y}+\frac{1}{z} = 9$\\
+
+$\frac{2}{x}+\frac{5}{y}+\frac{7}{z} = 52$\\
+
+$\frac{2}{x}+\frac{1}{y}-\frac{1}{z} = 0$\\
+\end{LARGE}
+
+\begin{LARGE}
+\textbf{
+Solution:}\\
+Let $ \frac{1}{x} = a,\frac{1}{y} = b,\frac{1}{z} = c $       
+\begin{align}
+ a+b+c=9\\
+ 2a+5b+7c=52\\
+ 2a+b-c=0
+\end{align}
+This System of equations can be written as\\
+\begin{align}
+AX = B,where\\
+  A = {\begin{bmatrix}
+      1 & 1 & 1 \\
+      2 & 5 & 7\\
+      2 & 1 & -1 \\
+     \end{bmatrix}}
+  X = {\begin{bmatrix}
+       a\\
+       b\\
+       c\\
+       \end{bmatrix}}
+\end{align}       
+and
+\begin{align}
+B = {\begin{bmatrix}
+   9\\
+   52\\
+   0\\
+   \end{bmatrix}}
+\end{align}
+Now,\\
+$\therefore$
+$A^{-1}$ exists and it has a unique solution.\\
+\begin{align*}
+\begin{matrix}
+A_{11} = -12 & A_{12} = 16 & A_{13} = -8\\
+A_{21} = 2   & A_{22} = -3 & A_{23} = 1\\
+A_{31} = 2   & A_{32} = -5 & A_{33} = 3\\
+\end{matrix}
+\end{align*}
+\begin{align}
+adj.A &= {\begin{bmatrix}
+         -12 & 16 &-8\\
+           2 & -3 & 1\\
+           2 & -5 & 3\\
+           \end{bmatrix}}^{T}\\
+A^{-1} &= \frac{adj.A}{|A|}\\
+A^{-1} &=-{\frac{1}{4}}
+\begin{bmatrix}
+-12 & 2 & 2\\
+16 & -3 & -5\\
+-8 & 1 & 3\\
+\end{bmatrix} \\
+X &= A^{-1}B\\
+X &= -{\frac{1}{4}} \begin{bmatrix}
+-12 & 2 & 2\\
+16 & -3 & -5\\
+-8 & 1 & 3\\
+\end{bmatrix} 
+\begin{bmatrix}
+9\\
+52\\
+0\\
+\end{bmatrix}\\
+\begin{bmatrix}
+a\\
+b\\
+c\\
+\end{bmatrix}
+&= -\frac{1}{4}
+\begin{bmatrix}
+-108+104+0\\
+144-156-0\\
+-72+52+0\\
+\end{bmatrix}\\
+&= -\frac{1}{4}
+\begin{bmatrix}
+-4\\
+-12\\
+-20\\
+\end{bmatrix}\\
+&= \begin{bmatrix}
+1\\
+3\\
+5\\
+\end{bmatrix}
+\end{align}
+$$a=1,b=3,c=5$$\\
+$ Thus,\frac{1}{x}=1\implies x=1,\\
+\frac{1}{y}=3 \implies y=\frac{1}{3}\\
+ \frac{1}{z}=5 \implies  z=\frac{1}{5} $
+ \begin{align}
+ \therefore x = 1,y = \frac{1}{3},z = \frac{1}{5}
+ \end{align}
+\end{LARGE}
+\end{document}
